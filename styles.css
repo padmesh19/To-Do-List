@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 70px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background: #6c63ff;
+    color: white;
+    padding: 30px 0 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+#features {
+    padding: 30px 0 20px;
+}
+#testimonials{
+    padding: 20px 0 20px;
+    background: #f4f4f4;
+}
+#cta {
+    padding: 20px 0 50px;
+}
+#todo-app{
+    padding: 20px 0;
+    display: none;
+}
+#todo-list{
+    padding: 10px 0;
+    display: none;
+    /* background: #f4f4f4; */
+}
+h2 {
+    margin-bottom: 30px;
+}
+
+.feature, .testimonial {
+    margin-bottom: 20px;
+}
+
+#cta {
+    background: #f4f4f4;
+}
+
+#cta button{
+    padding: 10px 20px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#todo-container {
+    margin-top: 30px;
+}
+
+#todo-input {
+    padding: 10px;
+    width:50%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#todo-time{
+    padding:8px;
+    width:10%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#add-btn, #home{
+    padding: 10px 20px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#todo-show {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 10%;
+}
+
+#todo-task{
+    width:100%;
+    display: flex;
+    align-items: center;
+    margin:20px 0;
+    padding:10px;
+}
+.list1{
+    flex-grow:8;
+}
+.list2{
+    flex-grow: 2;
+}
+#todo-task li {
+   
+    display: inline;
+    list-style-type: none;
+    padding: 10px;
+    margin:0 5px;
+    background: rgb(209, 209, 209);
+    border-radius: 15px 5px;
+}
+#todo-show li:nth-child(odd) {
+    background: rgb(234, 234, 235);
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    #todo-input {
+        width: 62%;
+        margin-bottom: 10px;
+    }
+    #todo-time{
+        width:16%
+    }
+    #add-btn {
+        width: 85%;
+        margin: 10px;
+    }
+    #todo-show {
+        margin: 20px 10%;
+    }
+    #home{
+        width: 85%;
+        margin-top: 10px;
+    }
+
+}

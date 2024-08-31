@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>Responsive To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <header>
+        <div class="container">
+            <h1>My To-Do List</h1>
+            <p>Stay organized and boost your productivity</p>
+        </div>
+    </header>
+
+    <!-- Call-to-Action Section -->
+    <section id="cta">
+        <div class="container">
+            <h2>Ready to get organized?</h2>
+            <button onclick="listPage()">Start Your To-Do List</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature">
+                <h3>Easy to Use</h3>
+                <p>Simple and intuitive design to help you manage tasks efficiently.</p>
+            </div>
+            <div class="feature">
+                <h3>Responsive Design</h3>
+                <p>Works seamlessly on all devices, from desktops to mobiles.</p>
+            </div>
+            <div class="feature">
+                <h3>Real-time Sync</h3>
+                <p>Your tasks are saved instantly and accessible from anywhere.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"This app has transformed the way I manage my daily tasks!"</p>
+                <h4>- Jane Doe</h4>
+            </div>
+            <div class="testimonial">
+                <p>"A simple, yet powerful tool that keeps me on track."</p>
+                <h4>- John Smith</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- To-Do List Add-->
+    <section id="todo-app">
+        <div class="container">
+            <h2>Your To-Do List</h2>
+            <div id="todo-container">
+                <input type="text" id="todo-input" placeholder="Add a new task" autocomplete="off">
+                <input type="time" name="todo-time" id="todo-time">
+                <button id="add-btn">Add</button>
+                <button id="home" onclick="homePage()">Home</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- To-do List Show -->
+    <section id="todo-list">
+        <div class="container" id="list-show">
+            <h1>My Tasks</h1>
+            <p>(Click for Strike and Double Click for Delete)</p>
+            <ul id="todo-show">
+                
+            </ul>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
